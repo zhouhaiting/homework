@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>去哪网，机票查询预约</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    
+</head>
+
+<body>
+    <header>
+        <!--顶部导航栏通栏-->
+        <div class="h-middle">
+            <!--中间居中部分-->
+            <div class="h-top">
+                <div class="top-right fr">
+                    <!--请登录右浮动部分-->
+                    <ul>
+                        <li>请<span><a href="#">登录</a></span>或<span><a href="#">免费注册</a></span></li>
+                        <li>|</li>
+                        <li><a href="#">消息</a></li>
+                        <li>|</li>
+                        <li><a href="#">查看订单</a>
+                            <ul id="second">
+                            	<li><a href="#">查看订单</a></li>
+                            	<li><a href="#">机票订单</a></li>
+                            	<li><a href="#">酒店订单</a></li>
+                            	<li><a href="#">团购订单</a></li>
+                            	<li><a href="#">度假订单</a></li>
+                            	<li><a href="#">门票订单</a></li>
+                            	<li><a href="#">公寓订单</a></li>
+                            </ul>
+                        </li>
+                        <li>|</li>
+                        <li><a href="#">积分商城</a></li>
+                        <li>|</li>
+                        <li><a href="#">联系客服</a></li>
+                        <li>|</li>
+                        <li><a href="#">In English</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo clearfix">
+                <!--logo加导航部分-->
+                <img src="images/logo.png">
+                <ul class="title fl">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">机票</a></li>
+                    <li><a href="#">酒店</a></li>
+                    <li><a href="#">团购</a>
+                        <ul id="second2">
+                        	<li><a href="#">酒店团购</a></li>
+                        	<li><a href="#">周边团购</a></li>
+                        	<li><a href="#">长线游</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">度假</a></li>
+                    <li><a href="#">门票</a></li>
+                    <li><a href="#">火车票</a></li>
+                    <li><a href="#">攻略</a></li>
+                    <li><a href="#">公寓</a></li>
+                    <li><a href="#">当地人</a></li>
+                    <li><a href="#">车车</a></li>
+                    <li><a href="#">汽车票</a></li>
+                    <li><a href="#">海外</a></li>
+                    <li><a href="#">保险</a></li>
+                    <li><a href="#">金融</a></li>
+                    <li><a href="#">会场</a></li>
+                </ul>
+                <div class="ggao fr">
+                    <!--右浮动的gif广告图-->
+                    <a href="#"><img src="images/ggao3.gif"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--顶部导航栏通栏结束-->
+    <article>
+        <!--正文居中1200开始-->
+        <div class="ticket-box clearfix">
+            <!--订票模块-->
+            <div class="ticket clearfix fl">
+                <!--订票中心-->
+                <div class="ticket-aside fl">
+                    <!--左侧边栏-->
+                    <ul>
+                        <li id="first-white"><a href="#">机票</a></li><!--第一个选项卡-->
+                        <li><a href="#">酒店</a></li>
+                        <li><a href="#">火车票</a></li>
+                        <li><a href="#">度假</a></li>
+                        <li><a href="#">门票</a></li>
+                        <li><a href="#">团购</a></li>
+                        <li><a href="#">车车</a></li>
+                        <li><a href="#">自由行</a></li>
+                    </ul>
+                </div>
+                <div class="search-ticket fr" style="display: block;"> <!--对应的每个div-->
+                    <!--显示的div-->
+                    <!--搜索订票-->
+                    <div class="search-title">
+                        <ul>
+                            <li id="first1"><a href="javascript:;">国内机票</a></li>
+                            <li><a href="javascript:;">国际港澳台机票</a></li>
+                        </ul>
+                    </div>
+                    <div class="select" style="display: block;"> <!--对应的国内机票-->
+                        <input type="radio" name="sex">单程
+                        <input type="radio" name="sex">往返
+                        <input type="text" name="textname" value="出发">
+                        <input type="text" name="textname" value="到达">
+                        <input id="btn" type="button" value="立即搜索">
+                    </div> 
+                    <div class="select" style="display: none;"> <!--对应的港澳台机票-->
+                        <input type="radio" name="sex">单程
+                        <input type="radio" name="sex">往返
+                        <input type="radio" name="sex">智能搜索
+                        <input type="radio" name="sex">多程
+                        <input type="text" name="textname" value="出发">
+                        <input type="text" name="textname" value="到达">
+                        <input id="btn" type="button" value="立即搜索">
+                    </div>
+                    <img class="shouhou" src="images/bar2.png">
+                </div>
+                <!--显示的div结束-->
+                <div class="search-ticket fr" style="display: none;">
+                    <img class="todo" src="images/search.png">
+                </div>
+                <div class="search-ticket fr" style="display: none;">
+                    <img class="todo" src="images/search1.png">
+                </div>
+                <div class="search-ticket fr" style="display: none;">
+                    <img class="todo" src="images/search2.png">
+                </div>
+                <div class="search-ticket fr" style="display: none;">
+                    <img class="todo" src="images/search.png">
+                </div>
+                <div class="search-ticket fr" style="display: none;">
+                    <img class="todo" src="images/search1.png">
+                </div>
+                <div class="search-ticket fr" style="display: none;">
+                    <img class="todo" src="images/search2.png">
+                </div>
+                <div class="search-ticket fr" style="display: none;">
+                    <img class="todo" src="images/search2.png">
+                </div>
+            </div>
+            <!--订票盒子结束-->
+             <div class="ad fr">
+               <!--  广告区域 -->
+                <img src="images/guanggao.jpg">
+            </div> 
+            <img class="ggao2" src="images/ggao2.jpg">
+            <div class="body-aside">
+                <!--粉色的侧边栏-->
+                <img src="images/tit19.png">
+                <div class="personage">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="bg1"></span>
+                              
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="bg2"></span>
+                                <span>消息</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="bg3"></span>
+                                <span>订单</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="bg4"></span>
+                                <span>账户</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="p-bottom">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="bg5"></span>
+                                    <span>建议</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="bg6"></span>
+                                    <span>扫码</span>
+                                </a>
+                            </li>
+                            <li id="close"> <!--关闭侧边栏-->
+                                <a href="#">
+                                    <span class="bg7"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="open" id="open" title="展开">  <!--展开侧边栏的按钮-->
+            	<a href="#"><span class="bg9"></span></a>
+            </div>
+            <div class="today clearfix"> <!--今日特惠模块-->
+            	<div class="today-title"> <!--今日特惠标题-->
+            		<ul>
+            			<li id="first"><a href="javascript:;">今日特惠</a></li>
+            			<li><a href="javascript:;">特惠门票</a></li>
+            		</ul>
+            		<p class="fr"><a href="#">更多&gt;</a></p>
+            	</div>
+            	<div class="scenic-spot show clearfix"> <!--下边的6张景点图片======默认显示的-->
+            		<div class="spot-left fl"> <!--左边2个大的div-->
+            		    <ul>
+            				<li>
+            					<img src="images/1.jpg">
+            					<div class="notebox fr">
+            					    <div class="note">
+            						    <p>北京-三亚5天自由行</p>
+            					    </div>
+            					    <p class="p1">现代客房+酒店距离大海200米</p>
+            					    <p class="money">&yen;2780</p>
+            					</div>
+            				</li>
+            				<li>
+            					<img src="images/20.jpg">
+            					<div class="notebox fr">
+            					    <div class="note">
+            						    <p>北京-三亚5天自由行</p>
+            					    </div>
+            					    <p class="p1">现代客房+酒店距离大海200米</p>
+            					    <p class="money">&yen;2780</p>
+            					</div>
+            				</li>				
+            			</ul>
+            		
+            		</div>
+            		<div class="spot-right fr"> <!--右边4个小的div-->
+            			<ul>
+            				<li>
+            					<img src="images/2.jpg" alt="">
+            					<p class="p2">北京 新西兰 11天 跟团游</p>
+            					<p class="p3">探索峡湾+观星座闪烁+报名立减</p>
+            					<p class="p4">&yen;15800</p>
+            				</li>
+            			    <li>
+            					<img src="images/21.jpg" alt="">
+            					<p class="p2">北京 新西兰 11天 跟团游</p>
+            					<p class="p3">探索峡湾+观星座闪烁+报名立减</p>
+            					<p class="p4">&yen;15800</p>
+            				</li>
+            				<li>
+            					<img src="images/21.jpg" alt="">
+            					<p class="p2">北京 新西兰 11天 跟团游</p>
+            					<p class="p3">探索峡湾+观星座闪烁+报名立减</p>
+            					<p class="p4">&yen;15800</p>
+            				</li>
+            				<li>
+            					<img src="images/2.jpg" alt="">
+            					<p class="p2">北京 新西兰 11天 跟团游</p>
+            					<p class="p3">探索峡湾+观星座闪烁+报名立减</p>
+            					<p class="p4">&yen;15800</p>
+            				</li>
+            			</ul>
+            		</div>
+            	</div> <!--6张图片结束-->
+                <!--特惠门票对应的div-->
+            	<div class="scenic-spot clearfix"> <!--下边的6张景点图片-->
+            		<div class="spot-left fl"> <!--左边2个大的div-->
+            		    <ul>
+            				<li>
+            					<img src="images/8.jpg">
+            					<div class="notebox fr">
+            					    <div class="note">
+            						    <p>北京-三亚5天自由行</p>
+            					    </div>
+            					    <p class="p1">现代客房+酒店距离大海200米</p>
+            					    <p class="money">&yen2780</p>
+            					</div>
+            				</li>
+            				<li>
+            					<img src="images/8.jpg">
+            					<div class="notebox fr">
+            					    <div class="note">
+            						    <p>北京-三亚5天自由行</p>
+            					    </div>
+            					    <p class="p1">现代客房+酒店距离大海200米</p>
+            					    <p class="money">&yen2780</p>
+            					</div>
+            				</li>				
+            			</ul>
+            		
+            		</div>
+            		<div class="spot-right fr"> <!--右边4个小的div-->
+            			<ul>
+            				<li>
+            					<img src="images/9.jpg" alt="">
+            					<p class="p2">北京 新西兰 11天 跟团游</p>
+            					<p class="p3">探索峡湾+观星座闪烁+报名立减</p>
+            					<p class="p4">&yen15800</p>
+            				</li>
+            			    <li>
+            					<img src="images/9.jpg" alt="">
+            					<p class="p2">北京 新西兰 11天 跟团游</p>
+            					<p class="p3">探索峡湾+观星座闪烁+报名立减</p>
+            					<p class="p4">&yen15800</p>
+            				</li>
+            				<li>
+            					<img src="images/9.jpg" alt="">
+            					<p class="p2">北京 新西兰 11天 跟团游</p>
+            					<p class="p3">探索峡湾+观星座闪烁+报名立减</p>
+            					<p class="p4">&yen15800</p>
+            				</li>
+            				<li>
+            					<img src="images/9.jpg" alt="">
+            					<p class="p2">北京 新西兰 11天 跟团游</p>
+            					<p class="p3">探索峡湾+观星座闪烁+报名立减</p>
+            					<p class="p4">&yen15800</p>
+            				</li>
+            			</ul>
+            		</div>
+            	</div> <!--6张图片结束-->
+            </div> <!--今日特惠模块结束-->
+            <div class="slideshow"> <!--轮播图区域-->
+            	<ul>
+            		<li class="active"><img src="images/lunbo1.jpg"></li>
+            		<li><img src="images/lunbo2.jpg"></li>
+            		<li><img src="images/lunbo3.jpg"></li>
+            		<li><img src="images/lunbo4.jpg"></li>
+            		<li><img src="images/lunbo5.jpg"></li>
+            	</ul>
+            	<div id="round">
+			        <a href="javascript:;"><span class="cur"></span></a> <!--对应的第一个小圆点-->
+		            <a href="javascript:;"><span></span></a>
+			        <a href="javascript:;"><span></span></a>
+			        <a href="javascript:;"><span></span></a>
+			        <a href="javascript:;"><span></span></a>
+		        </div>
+            </div>
+            <div class="guanggao2">
+            	<img src="images/10.jpg">
+            </div>
+            <div class="hot"> <!--当季热门度假-->
+            	<div class="hot-title">
+            		<p>当季热门度假</p>
+            	</div>
+            	<div class="travel">
+            		<div class="tr-left fl">
+            			<div class="smabox">
+            				<div class="smatitle">
+            					<p>周边游</p>
+            				</div>
+            				<a href="#">古北水镇</a>
+            				<a href="#">北戴河</a>
+            				<a href="#">十渡</a>
+            				<a href="#">天津</a>
+            			</div>
+            				<div class="smabox">
+            				<div class="smatitle">
+            					<p>国内游</p>
+            				</div>
+            				<a href="#">古北水镇</a>
+            				<a href="#">北戴河</a>
+            				<a href="#">十渡</a>
+            				<a href="#">天津</a>
+            			</div>
+            				<div class="smabox">
+            				<div class="smatitle">
+            					<p>出境游</p>
+            				</div>
+            				<a href="#">古北水镇</a>
+            				<a href="#">北戴河</a>
+            				<a href="#">十渡</a>
+            				<a href="#">天津</a>
+            			</div>
+            				<div class="smabox">
+            				<div class="smatitle">
+            					<p>签证</p>
+            				</div>
+            				<a href="#">古北水镇</a>
+            				<a href="#">北戴河</a>
+            				<a href="#">十渡</a>
+            				<a href="#">天津</a>
+            			</div>
+            		</div>
+            		<div class="tr-right fr">
+            			<ul>
+            				<li>
+            					<img src="images/11.jpg" alt="">
+            					<p class="p2">北京 杭州 6天 跟团游</p>
+            					<p class="p3">探索峡湾+观星座闪烁+报名立减</p>
+            					<p class="p4">&yen15800</p>
+            					<div class="yinying">
+            						<p>北京-杭州6天跟团游</p>
+            					</div>
+            				</li>
+            					<li>
+            					<img src="images/22.jpg" alt="">
+            					<p class="p2">北京 三亚 8天 跟团游</p>
+            					<p class="p3">探索峡湾+观星座闪烁+报名立减</p>
+            					<p class="p4">&yen15800</p>
+            					<div class="yinying">
+            						<p>北京-三亚8天跟团游</p>
+            					</div>
+            				</li>
+            					<li>
+            					<img src="images/11.jpg" alt="">
+            					<p class="p2">北京 杭州 6天 跟团游</p>
+            					<p class="p3">探索峡湾+观星座闪烁+报名立减</p>
+            					<p class="p4">&yen15800</p>
+            					<div class="yinying">
+            						<p>北京-杭州6天跟团游</p>
+            					</div>
+            				</li>
+            					<li>
+            					<img src="images/3.jpg" alt="">
+            					<p class="p2">北京 杭州 6天 跟团游</p>
+            					<p class="p3">探索峡湾+观星座闪烁+报名立减</p>
+            					<p class="p4">&yen15800</p>
+            					<div class="yinying">
+            						<p>北京-杭州6天跟团游</p>
+            					</div>
+            				</li>
+            					<li>
+            					<img src="images/22.jpg" alt="">
+            					<p class="p2">北京 三亚 8天 跟团游</p>
+            					<p class="p3">探索峡湾+观星座闪烁+报名立减</p>
+            					<p class="p4">&yen15800</p>
+            					<div class="yinying">
+            						<p>北京-三亚8天跟团游</p>
+            					</div>
+            				</li>
+            					<li>
+            					<img src="images/3.jpg" alt="">
+            					<p class="p2">北京 杭州 6天 跟团游</p>
+            					<p class="p3">探索峡湾+观星座闪烁+报名立减</p>
+            					<p class="p4">&yen15800</p>
+            					<div class="yinying">
+            						<p>北京-杭州6天跟团游</p>
+            					</div>
+            				</li>
+            			</ul>
+            		</div>
+            	</div>
+            </div> <!--当季热门度假结束-->
+            <div class="house"> <!--特色公寓住宿开始-->
+            	<div class="house-title">
+            		<p>特色公寓住宿</p>
+            	</div>
+            	<div class="tab-house">
+            		<ul>
+            			<li id="first"><a href="javascript:;">全国热门去处</a></li>
+            			<li><a href="javascript:;">热卖好房间</a></li>
+            			<li><a href="javascript:;">适合多人同时住</a></li>
+            			<li><a href="javascript:;">周租月租右优惠</a></li>
+            		</ul>
+            	</div>
+            	<div class="link-house clearfix" style="display: block;"><!--下边的住宿列表-->
+            		<div class="house-left fl"> <!--左边两个大的-->
+            			<div class="house-left1"> <!--左边第一个-->
+            				<img src="images/13.jpg">
+            				<div class="float"> <!--浮动上去的那部分-->
+            					<p>三亚(944)个房源</p>
+            					<p>永远24°c的三亚，是麦兜梦想中的天堂，蓝天白云，椰林树影，水清沙白，对于三亚来说，没有所谓的淡季，每天都是最好的一天</p>
+            				</div>
+            			</div>
+            			<div class="house-left1" style="margin-top: 15px;"> <!--左边第二个-->
+            				<img src="images/13.jpg">
+            				<div class="float"> <!--浮动上去的那部分-->
+            					<p>三亚(944)个房源</p>
+            					<p>永远24°c的三亚，是麦兜梦想中的天堂，蓝天白云，椰林树影，水清沙白，对于三亚来说，没有所谓的淡季，每天都是最好的一天</p>
+            				</div>
+            			</div>
+            		</div> 
+            		<div class="house-right fr"> <!--右边的4个小的-->
+            			<ul>
+            				<li>
+            				    <a href="#">
+            					    <img src="images/14.jpg">
+            					    <div class="box-hide">
+            					    	<div class="hide2">
+            					    		<p>上海(637个房源)</p>
+            					    		<p>积蓄了全国的政治文化力量，让这座城市显得气势磅礴。又因为曾经被叫做北平，
+            					    		她看起来有些文人派头。</p>
+            					    	</div>
+            					    </div>
+            					</a>
+            				</li>
+            				<li>
+            				    <a href="#">
+            					    <img src="images/14.jpg">
+            					    <div class="box-hide">
+            					    	<div class="hide2">
+            					    		<p>上海(637个房源)</p>
+            					    		<p>积蓄了全国的政治文化力量，让这座城市显得气势磅礴。又因为曾经被叫做北平，
+            					    		她看起来有些文人派头。让这座城市显得气势磅礴.</p>
+            					    	</div>
+            					    </div>
+            					</a>
+            				</li>
+            					<li>
+            				    <a href="#">
+            					    <img src="images/14.jpg">
+            					    <div class="box-hide">
+            					    	<div class="hide2">
+            					    		<p>上海(637个房源)</p>
+            					    		<p>积蓄了全国的政治文化力量，让这座城市显得气势磅礴。又因为曾经被叫做北平，
+            					    		她看起来有些文人派头。积蓄了全国的政治文化力量，让这座城市显得气势磅礴。</p>
+            					    	</div>
+            					    </div>
+            					</a>
+            				</li>
+            				<li>
+            				    <a href="#">
+            					    <img src="images/14.jpg">
+            					    <div class="box-hide">
+            					    	<div class="hide2">
+            					    		<p>上海(637个房源)</p>
+            					    		<p>积蓄了全国的政治文化力量，让这座城市显得气势磅礴。又因为曾经被叫做北平，
+            					    		她看起来有些文人派头。</p>
+            					    	</div>
+            					    </div>
+            					</a>
+            				</li>
+            			</ul>
+            		</div>
+            	</div> <!--6个住宿列表结束-->
+                <div class="link-house" style="display: none;"><!--对应的热卖好房间div-->
+                	<img src="images/15.png">
+                </div>
+                <div class="link-house" style="display: none;"><!--对应的热卖好房间div-->
+                	<img src="images/12.jpg" style="width: 434px; height: 425px;">
+                </div>
+                <div class="link-house" style="display: none;"><!--对应的热卖好房间div-->
+                	<img src="images/5.jpg" style="width: 434px;height: 425px;">
+                </div>
+            </div> <!--特色公寓住宿结束-->
+            <div class="traving clearfix"> <!--旅行攻略模块-->
+            	<div class="tra-title">
+            	    <p>旅行攻略</p>
+            	</div>
+            	<div class="tra-link"> <!--旅游模块的title-->
+            		<ul>
+            			<li id="first"><a href="javascript:;">盛夏避暑指南</a></li>
+            			<li><a href="javascript:;">宝贝出游计划</a></li>
+            			<li><a href="javascript:;">夏末观星摄影</a></li>
+            			<li><a href="javascript:;">来场免签之旅</a></li>
+            		</ul>
+            	</div>
+            	<div class="place clearfix" style="display: block;"> <!--旅游下面的div-->
+            		<div class="place-left fl"> 
+            			<img src="images/12.jpg">
+            			<div class="hide3">
+            				<p class="p5">笑颜日记之瑞士，深度跨越冬夏之旅</p>
+            				<img src="images/yuan.jpg" alt="">
+            				<p>笑颜日记|2016年5月12日出发</p>
+            				<p>共9天|1201张照片</p>
+            			</div>
+            		</div>
+            		<div class="place-right fr">
+            			<ul>
+            				<li>
+            					<img class="hua" src="images/hua.jpg">
+            					<div class="hide4">
+            						<p class="p5">圆梦，喜马拉雅山脉</p>
+            						<img src="images/yuan.jpg">
+            						<p>先森|2017年8月8日出发</p>
+            						<p>共15天|356张图片</p>
+            					</div>
+            				</li>
+            				<li>
+            					<img class="hua" src="images/hua.jpg">
+            					<div class="hide4">
+            						<p class="p5">圆梦，喜马拉雅山脉</p>
+            						<img src="images/yuan.jpg">
+            						<p>先森|2017年8月8日出发</p>
+            						<p>共15天|356张图片</p>
+            					</div>
+            				</li>
+            				<li>
+            					<img class="hua" src="images/23.jpg">
+            					<div class="hide4">
+            						<p class="p5">六月盛夏，25度的阿贝</p>
+            						<img src="images/yuan.jpg">
+            						<p>先森|2017年8月8日出发</p>
+            						<p>共15天|356张图片</p>
+            					</div>
+            				</li>
+            				<li>
+            					<img class="hua" src="images/23.jpg">
+            					<div class="hide4">
+            						<p class="p5">六月盛夏，25度的阿贝</p>
+            						<img src="images/yuan.jpg">
+            						<p>先森|2017年8月8日出发</p>
+            						<p>共15天|356张图片</p>
+            					</div>
+            				</li>
+            			</ul>
+            		</div>
+            	</div> <!--旅行攻略下边的div结束-->
+            	<div class="place">
+            		<img src="images/5.jpg">
+            	</div>
+            	<div class="place">
+            		<img src="images/12.jpg">
+            	</div>
+            	<div class="place">
+            		<img src="images/5.jpg">
+            	</div>
+            </div> <!--旅行攻略模块结束-->
+            <div class="book">  <!--骆驼书模块开始-->
+            	<div class="book-title">
+            		<p>骆驼书<span>读骆驼书，行万里路</span></p>
+            	</div>
+            	<div class="link-book"> <!--书的标题-->
+            		<ul>
+            		    <li id="first"><a href="javascript:;">专题</a></li>
+            		    <li><a href="javascript:;">亚洲</a></li>
+            		    <li><a href="javascript:;">欧洲</a></li>
+            		    <li><a href="javascript:;">北美洲</a></li>
+            		</ul>
+            	</div>
+            	<div class="books"> <!--对应书的div-->
+            		<img src="images/15.jpg">
+            		<div class="books-right fr">
+            			<ul>
+            				<li>
+            					<img src="images/17.jpg">
+            					<div class="hide5"> 
+            						<p>舌尖上的韩国（南部篇）</p>
+            						<p>Taste of Korea</p>
+            						<p>作者：康怡</p>
+            						<p>更新时间: 2015-02-09</p>
+            					</div>
+            				</li>
+            				<li>
+            					<img src="images/6.jpg">
+            					<div class="hide5"> 
+            						<p>舌尖上的韩国（南部篇）</p>
+            						<p>Taste of Korea</p>
+            						<p>作者：康怡</p>
+            						<p>更新时间: 2015-02-09</p>
+            					</div>
+            				</li>
+            				<li>
+            					<img src="images/18.jpg">
+            					<div class="hide5"> 
+            						<p>舌尖上的韩国（南部篇）</p>
+            						<p>Taste of Korea</p>
+            						<p>作者：康怡</p>
+            						<p>更新时间: 2015-02-09</p>
+            					</div>
+            				</li>
+            			</ul>
+            		</div>
+            	</div> <!--4张图片结束-->
+            	<div class="books" style="display: none;">
+            		<img src="images/16.jpg" width="240px;" height="338px;">
+            	</div>
+            	<div class="books" style="display: none;">
+            		<img src="images/17.jpg">
+            	</div>
+            	<div class="books" style="display: none;">
+            		<img src="images/18.jpg">
+            	</div>
+            	<div class="note-left fl">
+            		<h3>热门出境骆驼书</h3>
+            		<ul style="float: left;">
+            			<li><span>日本花见:</span>烂漫春光，赏尽樱吹雪</li>
+            			<li><span>胡志明市:</span>湄公河上风情浪漫明珠</li>
+            		</ul>
+            		<ul>
+            			<li><span>日本花见:</span>烂漫春光，赏尽樱吹雪</li>
+            			<li><span>胡志明市:</span>湄公河上风情浪漫明珠</li>
+            		</ul>
+            	</div>
+            	<div class="note-right fr">
+            		<h3>热门海岛骆驼书</h3>
+            	    <ul style="float: left;">
+            	    	<li><span>甲米:</span>宛如天堂密境的热带半岛</li>
+            	    	<li><span>苏梅岛:</span>拒绝好莱坞的纯天然海岛</li>
+            	    </ul>
+            	    <ul>
+            	    	<li><span>巴厘岛:</span>极具人文热带风情的度假天堂</li>
+            	    	<li><span>毛里求斯:</span>印度洋的珍珠，欧洲的后花园</li>
+            	    </ul>
+            	</div>
+            </div> <!--骆驼书模块结束-->
+    </article>
+    <footer>
+        <div class="footer-pic"> <!--贯穿整宽度100%的蓝色背景-->
+            <div class="pic-middle"> <!--宽度为1200px 的居中，包含2张背景图片-->
+    	        <span class="span1 bg10"></span>
+    	        <span class="span2 bg11"></span>
+    	    </div>
+    	</div>
+    	<div class="seolink"> 
+    		<dl>
+    			<dt>度假</dt> 
+    			<dd>云南旅游</dd> 
+    			<dd>香港旅游</dd>
+    			<dd>厦门旅游</dd>
+    			<dd>武汉旅游</dd>
+    			<dd>南京旅游</dd>
+    			<dd>青岛旅游</dd>
+    			<dd>乌镇旅游</dd>
+    			<dd>杭州旅游</dd>
+                <dd>三亚旅游</dd>
+    			<dd>上海旅游</dd>
+    			<dd>鼓浪屿旅游</dd>
+    			<dd>普吉岛旅游</dd>
+                <dd>成都旅游</dd>
+    			<dd>张家界旅游</dd>
+    			<dd>巴厘岛旅游</dd>
+    			<dd>云南旅游</dd>
+    			<dd>香港旅游</dd>
+    			<dd>厦门旅游</dd>
+    			<dd>武汉旅游</dd>
+    			<dd>南京旅游</dd>
+    			<dd>青岛旅游</dd>
+    			<dd>乌镇旅游</dd>
+    			<dd>杭州旅游</dd>
+                <dd>三亚旅游</dd>
+    			<dd>上海旅游</dd>
+    			<dd>鼓浪屿旅游</dd>
+    			<dd>普吉岛旅游</dd>
+                <dd>成都旅游</dd>
+    			<dd>张家界旅游</dd>
+    			<dd>巴厘岛旅游</dd>
+    		</dl>
+    	</div>
+    	<div class="seolink2">
+    		<dl>
+    			<dt>攻略</dt>
+    			<dd>张家界旅游攻略</dd>
+    			<dd>云南旅游攻略</dd>
+    			<dd>天津旅游攻略</dd>
+    			<dd>南京旅游攻略</dd>
+    			<dd>武汉旅游攻略</dd>
+    			<dd>厦门旅游攻略</dd>
+    			<dd>苏州旅游攻略</dd>
+    			<dd>普吉岛旅游攻略</dd>
+    			<dd>九寨沟旅游攻略</dd>
+    			<dd>西藏旅游公约</dd>
+    			<dd>张家界旅游攻略</dd>
+    			<dd>云南旅游攻略</dd>
+    			<dd>天津旅游攻略</dd>
+    			<dd>南京旅游攻略</dd>
+    			<dd>武汉旅游攻略</dd>
+    			<dd>厦门旅游攻略</dd>
+    			<dd>苏州旅游攻略</dd>
+    			<dd>普吉岛旅游攻略</dd>
+    			<dd>九寨沟旅游攻略</dd>
+    			<dd>西藏旅游公约</dd>
+    		</dl>
+    	</div>
+    	<div class="about">
+    		<ul>
+    			<li><a href="#">关于Qunar.com</a></li>
+    			<li><a href="#">投资者关系</a></li>
+    			<li><a href="#">酒店加盟</a></li>
+    			<li><a href="#">业务合作</a></li>
+    			<li><a href="#">加入我们</a></li>
+    			<li><a href="#">严重违规失信，专项整治举报</a></li>
+    			<li><a href="#">安全中心</a></li>
+    			<li><a href="#">星骆驼公益</a></li>
+    			<li><a href="#">Aboout us</a></li>
+    		</ul>
+    		<br>
+    		<p>
+    		    <span>Copyright ©2017 Qunar.com</span>
+    		    <span>京公网安备110108901530</span>
+    		    <a href="#">京ICP备05021087号</a>
+    		    <a href="#">营业执照信息</a>
+    		    <a href="#">保险经纪资质(京)-非经营性-2016-0110</a>
+    		    <span>去哪儿网客服电话95117</span>
+    		</p>
+    		<div class="beian">
+    		    <img src="images/19.jpg">
+    		</div>
+    	</div>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

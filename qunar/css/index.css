@@ -1,0 +1,1032 @@
+/*=========导航栏开始============*/
+/*顶部导航栏部分*/
+header{
+	height: 74px;
+	border-bottom: 2px solid #00afc7;
+	position: relative;
+}
+/*中间居中部分*/
+.h-middle{
+	width: 1200px;
+	height: 72px;
+	margin: 0 auto;
+}
+
+.h-top{
+	height: 20px;
+}
+/*logo部分*/
+.logo{
+	width: 1200px;
+	height: 70px;
+	position: relative;
+}
+/*请登录部分*/
+.top-right{
+	width: 504px;
+	height: 23px;
+}
+/*请登录的ul li*/
+.top-right ul li{
+   float: left;
+   padding: 0 5px;
+   color: #757575;
+   position: relative;
+}
+.top-right ul li a{
+	font-size: 12px;
+	color: #757575;
+}
+.top-right ul li a:hover{
+	color: #2454FA;
+}
+.top-right ul li:hover #second{
+	display: block;
+	z-index: 999;
+}
+/*登录换颜色*/
+.top-right li span a{
+	color: #1E97FB;
+	padding-left: 5px;
+}
+/*查看订单下边的二级菜单 ，绝对定位*/
+.top-right #second{
+	position: absolute;
+	top: 0px;
+	left: 0;
+	display: none;
+	width: 60px;
+	background: #fff;
+	border:1px solid #757575;
+}
+/*让二级菜单下的li不浮动*/
+.top-right #second li{
+	float: none;
+}
+/*a 转化成块*/
+.top-right #second li a{
+	display: block;
+	padding: 3px 0;
+}
+/*hover 二级菜单的li时，改变a 的颜色和背景颜色*/
+#second>li>a:hover{
+	background: #009fbe;
+	color: #fff;
+}
+.logo img{
+	float: left;
+}
+/*logo右边的导航==首页*/
+.logo ul li{
+	float: left;
+	padding-top: 18px;
+	margin-right: 18px;
+	position: relative;
+}
+.title{
+	width: 915px;
+	
+
+}
+.logo ul li a{
+	font-size: 17px;
+	color: #3c3c3c;
+	font-weight: bold;
+}
+/*gif广告区域*/
+.ggao{
+	width: 140px;
+	height: 36px;
+	margin-top: 13px;
+}
+/*团购下边的二级菜单*/
+#second2{
+	width: 300px;
+	height: 40px;
+	background-color: #fff;
+	border: 1px solid #757575;
+	position: absolute;
+	top: 35px;
+	left: -80px;
+	display: none;
+}
+#second2 li{
+	float: left;
+}
+#second2 li a{
+	color: #737373;
+	font-size: 14px;
+	padding: 0 10px;
+}
+#second2 li a:hover{
+	background-color: #63BDFD;
+	color: #4F3CF8;
+}
+/*hover首页菜单的时候，二级菜单出现*/
+.logo ul li:hover #second2{
+	display: block;
+}
+/*===========正文开始=========*/
+article{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 16px;
+}
+/*订票最外div*/
+.ticket-box{
+	width: 1200px;
+	/*height: 426px;*/
+
+}
+/*订票中心*/
+.ticket{
+	width: 721px;
+	height: 312px;
+	border: 5px solid #00afc7;
+}
+/*订票侧边栏*/
+.ticket-aside{
+	width: 71px;
+	height: 312px;
+	background: #00afc7;
+	
+}
+/*侧边栏下的链接li*/
+.ticket-aside ul li{
+	width: 71px;
+	height: 38px;
+	text-align: center;
+}
+.ticket-aside ul li a{
+	color: #fff;
+	font-size: 17px;
+	line-height: 38px;
+	display: block;
+	width: 71px;
+	height: 38px;
+}
+/*鼠标hover 的时候有背景颜色*/
+.ticket-aside ul li a:hover{
+	background: #fff;
+	color: #3850FC;
+}
+/*右边的搜索订票*/
+
+
+.search-ticket{
+	width: 605px;
+	height: 298px;
+	border: 1px solid #ccc;
+	margin: 10px 18px;
+	
+}
+
+/*国内机票==港澳台机票标题=====*/
+.search-title{
+	height: 34px;
+	border-bottom: 1px solid #3C66FA;
+}
+.search-title ul li{
+	float: left;
+	padding: 0 20px;
+	line-height: 34px;
+}
+.search-title ul li a{
+	font-size: 16px;
+}
+/*机票的默认效果,白色背景蓝色字*/
+#first-white{
+	background: #fff;
+	color: #3850FC;
+}
+#first-white a{
+	color: #3850FC;
+}
+/*国内机票的默认效果，有2px蓝色下边框的*/
+#first1{
+	border-bottom: 2px solid #098cb5;
+	font-weight: bold;
+}
+/*对应的国内机票div*/
+.select{
+	width: 242px;
+}
+.select input{
+    margin-top: 20px;
+
+}
+.search-ticket .shouhou{
+	padding-top: 50px;
+}
+#btn{
+	width: 134px;
+	height: 40px;
+	background: #fc5830;
+}
+.todo{
+	width: 605px;
+	height: 258px;
+}
+.ggao2{
+    padding-top: 13px;
+}
+/*=============粉色侧边栏=========*/
+body{
+	position: relative;
+}
+/*侧边栏div，固定定位*/
+.body-aside{
+	width: 35px;
+	height: 100%;
+	background: #f54599;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	transition: all 0.7s;
+}
+.body-aside img{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.personage{
+	height: 462px;
+	margin-top: 180px;
+	position: relative;
+}
+.personage ul li{
+	margin-top: 20px;
+	width: 33px;
+	height: 44px;
+}
+.bg1,.bg2,.bg3,.bg4,.bg5,.bg6,.bg7{
+	display: block;
+	/*margin-top: 10px;*/
+	margin-left: 8px;
+	width: 18px;
+	height: 16px;
+	background-image: url(../images/icons20.png);
+}
+.bg1{
+	background-position: 0 0;
+}
+.bg2{
+	background-position: 0 -17px;
+}
+.bg3{
+	background-position: 0 -93px;
+}
+.bg4{
+	background-position: 0 -32px;
+}
+.bg5{
+	background-position: 0 -46px;
+}
+.bg6{
+	background-position: 0 -62px;
+}
+.bg7{
+	background-position: -35px -95px;
+}
+
+.personage span{
+	color: #fff;
+}
+.body-aside .p-bottom{
+	margin-top: 50%;
+}
+.bg1-hide{
+	width: 276px;
+	height: 38px;
+	border: 1px solid #F60F55;
+	background: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.open{
+	position: fixed;
+	bottom: 50px;
+	left: -86px;
+	transition: all 0.7s;
+}
+/*展开粉色侧边栏的广告按钮*/
+.bg9{
+	display: block;
+	width: 86px;
+	height: 48px;
+	background-image: url(../images/icons.png);
+}
+/*背景图片坐标*/
+.bg9{
+	background-position: -53px 0;
+}
+/*=========今日特惠模块========*/
+.today{
+   width: 946px;
+   height: 550px;
+   margin-top: 15px;
+   overflow: hidden;
+}
+.today-title{
+	height: 38px;
+	border-bottom: 2px solid #3bb0d0;
+	margin-bottom: 15px;
+}
+/*2个li标题*/
+.today-title ul li{
+	float: left;
+	width: 92px;
+	height: 32px;
+	text-align: center;	
+}
+
+.today-title a{
+	color:#3bb0d0;
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: bold;
+}
+/*今日特惠默认选中效果，蓝色背景，白色字*/
+#first{
+	background:#3bb0d0;
+}
+#first a{
+	color: #fff;
+}
+/*景区大div*/
+.today #scenic-spot{
+	width: 944px;
+	height: 496px;
+	margin-top: 15px;
+}
+/*左边的2个大div*/
+.spot-left img{
+	width: 247px;
+	height: 237px;
+	float: left;
+}
+.spot-left ul li{
+	border: 1px solid #DEDEDE;
+	height: 237px;
+	
+}
+.spot-left .note{
+	width: 182px;
+	height: 76px;
+	background: #3bb0d0;
+}
+.notebox{
+	width: 182px;
+}
+.note p{
+	text-align: center;
+	line-height: 30px;
+	font-size: 20px;
+	color: #fff;
+	width: 100px;
+	padding-left: 36px;
+}
+.p1{
+	font-size: 17px;
+
+}
+.money{
+	font-size: 17px;
+	color: #ff5555;
+	font-weight: bold;
+	padding-top: 83px;
+}
+/*右边的4个小div*/
+.spot-right{
+	width: 500px;
+	/*height: 494px;*/
+}
+.spot-right ul li{
+    width: 240px;
+    height: 238px;
+    border: 1px solid #DEDEDE;
+    float: left;
+   
+}
+.spot-right img{
+	width: 240px;
+	height: 145px;
+}
+.spot-right .p2{
+	font-weight: bold;
+	padding-top: 10px;	
+}
+.p3{
+	color: #777777;
+	padding-top: 10px;
+}
+.p4{
+	color: #ff5555;
+	font-weight: bold;
+	font-size: 17px;
+	padding-top: 10px;
+}
+.spot-right li:nth-child(2),.spot-right li:nth-child(4){
+	margin-left: 15px;
+}
+.spot-right li:nth-child(3),.spot-right li:nth-child(4){
+	margin-top: 15px;
+}
+.spot-left li:nth-child(2){
+	margin-top: 18px;
+}
+/*hover的时候出蓝色的边框*/
+#scenic-spot li:hover{
+	box-shadow: 2px 2px 2px #848484;
+}
+/*6张图片div隐藏*/
+.today #scenic-spot{
+	display: none;
+}
+/*第一个是显示的*/
+#show{
+	display: block;
+	margin-top: 15px;
+}
+.guanggao2{
+	margin-top: 20px;
+}
+/*===========轮播图区域===========*/
+/*图片外边的盒子*/
+.slideshow{
+   width: 947px;
+   height: 288px;
+   overflow: hidden;
+   margin-top: 30px;
+   position: relative;
+}
+/*让所有的li图片重叠在一起，绝对定位在一个点，none掉*/
+.slideshow ul li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+/*在让第一个显示出来*/
+.slideshow .active{
+	display: block;
+}
+#round{
+	height: 20px;
+	position: absolute;
+	bottom: 23px;
+	left: 407px;
+}
+/*圆点的样式*/
+#round span{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #6E6D6D;
+	margin: 0 4px;
+}
+/*圆点的默认颜色*/
+#round .cur{
+	background: #FB5905;
+}
+/*==========当季热门度假========*/
+.hot{
+	width: 944px;
+	height: 592px;
+	margin-top: 15px;
+}
+.hot-title{
+	height: 36px;
+	border-bottom: 2px solid #3bb0d0;
+}
+.hot-title p{
+	font-size: 22px;
+	color: #3bb0d0;
+}
+.travel{
+	height: 542px;
+	margin-top: 15px;
+}
+.tr-left{
+	width: 180px;
+}
+.smabox{
+	height: 126px;
+	border: 1px solid #72DAF9;
+}
+.smatitle{
+	height: 30px;
+	background: #e2f3f8;
+}
+.smatitle p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #433BFC;
+    padding-left: 10px;
+}
+.tr-left div{
+	margin-top: 10px;
+}
+.tr-left div:nth-child(1){
+	margin-top: 0px;
+}
+.tr-right{
+	width: 753px;
+	height: 535px;
+}
+.tr-right ul li{
+	width: 242px;
+	height: 261px;
+    border: 1px solid #DEDEDE;
+    position: relative;
+    float: left;
+    margin-right: 6px;
+}
+.tr-right img{
+	width: 240px;
+    height: 162px;
+
+}
+.yinying{
+	width: 135px;
+	height: 60px;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	bottom: 100px;
+	left: 54px;
+}
+.yinying p{
+	width: 100px;
+	line-height: 30px;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+}
+.tr-right ul li:nth-child(4){
+	margin-top: 10px;
+}
+.tr-right ul li:nth-child(5){
+	margin-top: 10px;
+}
+.tr-right ul li:nth-child(6){
+	margin-top: 10px;
+}
+.tr-right ul li:hover{
+	box-shadow: 2px 2px 2px #919191;
+}
+/*==========特色公寓住宿===========*/
+.house{
+	width: 940px;
+	/*height: 515px;*/
+	margin-top: 30px;
+}
+.house-title{
+	height: 33px;
+	border-bottom: 2px solid #3bb0d0;
+}
+.house-title p{
+	font-size: 22px;
+	color: #3bb0d0;
+}
+.house .tab-house{
+	height: 30px;
+	margin-top: 15px;
+}
+.tab-house ul li{
+   float: left;
+   margin-right: 18px;
+}
+.tab-house li a{
+	font-size: 13px;
+	line-height: 30px;
+	text-align: center;
+	padding: 0 5px;
+	color: #424242;
+
+}
+/*全国热门去处，默认选中效果*/
+#first{
+	background: #3bb0d0;
+}
+#first a{
+	color: #fff;
+}
+.link-house{
+	width: 960px;
+	/*height: 423px;*/
+/*	border: 1px solid green;*/
+	margin-top: 15px;
+	/*overflow: hidden;*/
+}
+.house-left{
+	width: 434px;
+	height: 423px;
+}
+/*左边第一个*/
+.house-left1{
+	width: 435px;
+	height: 204px;
+	overflow: hidden;
+	position: relative;
+}
+.float{
+	width: 435px;
+	height: 80px;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,transparent),color-stop(1,rgba(0,0,0,0.9)));
+	position: absolute;
+	top: 182px;
+	left: 0;
+	transition: top 0.5s;
+}
+.float p{
+	color: #fff;
+}
+.house-left1:hover .float{
+	top: 124px;
+}
+/*右边的4个小图*/
+.house-right{
+	width: 508px;
+	height: 423px;
+	margin-left: 15px;
+}
+/*li设置成相对定位*/
+.house-right ul li{
+	width: 237px;
+	height: 206px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+/*再加一个div包裹，宽高100%，绝对定位在图片的下面*/
+.box-hide{
+	width: 100%;
+	height: 100%;
+	/*background: #32B5F7;*/
+	position: absolute;
+	top: 206px;
+	left: 0;
+	transition: top 0.7s;
+}
+/*带文字的阴影部分，绝对定位在box-hide的身上，bottom=0，阴影是不设高度的，文字撑起高度*/
+.hide2{
+	position: absolute;
+	bottom: 0;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,transparent),color-stop(1,rgba(0,0,0,0.9)));
+}
+/*hover li 的时候，让大盒子top为0，与图片对齐*/
+.house-right ul li:hover .box-hide{
+	top: 0;
+}
+.hide2 p{
+	color: #fff;
+	line-height: 20px;
+}
+.house-right ul li{
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+/*============旅行攻略=============*/
+.traving{
+	width: 942px;
+	margin-top: 15px;
+}
+.tra-title{
+	height: 33px;
+	border-bottom: 2px solid #3bb0d0;
+}
+.tra-title p{
+	color:#3bb0d0;
+	font-size: 22px;
+}
+.tra-link{
+	height: 30px;
+	margin-top: 15px;
+}
+.tra-link ul li{
+	float: left;
+	margin-right: 20px;
+}
+.tra-link ul li a{
+	color: #313131;
+	line-height: 30px;
+	text-align: center;
+	padding: 0 5px;
+}
+#first{
+	background: #3bb0d0;
+
+}
+#first a{
+	color: #fff;
+}
+.place{
+	width: 980px;
+	height: 332px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.place-left{
+	position: relative;
+	overflow: hidden;
+}
+.place-left img{
+	width: 432px;
+	height: 333px;
+}
+.place-right{
+	width: 530px;
+	/*height: 332px;*/
+	margin-left: 10px;
+}
+.hua{
+	width: 243px;
+	height: 160px;
+}
+.p5{
+	height: 30px;
+}
+
+.hide3{
+	width: 432px;
+	height: 80px;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,transparent),color-stop(1,rgba(0,0,0,0.9)));
+	position: absolute;
+	top: 309px;
+	left: 0;
+	transition: top 0.5s;
+}
+.hide3 img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	float: left;
+}
+.hide3 p{
+	color: #fff;
+	font-size: 16px;
+}
+.place-left:hover .hide3{
+	top: 252px;
+}
+.place-right ul li{
+	width: 241px;
+	height: 160px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+.hide4{
+	width: 242px;
+	height: 80px;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,transparent),color-stop(1,rgba(0,0,0,0.9)));
+	position: absolute;
+	top: 130px;
+	left: 0;
+	transition: top 0.5s;
+}
+.hide4 img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	float: left;
+}
+.hide4 p{
+	color: #fff;
+	font-size: 16px;
+}
+.place-right ul li:hover .hide4{
+	top: 80px;
+}
+.traving .place{
+	display: none;
+}
+/*===========骆驼书==========*/
+.book{
+	width: 944px;
+	/*height: 515px;*/
+	margin-top: 15px;
+}
+.book-title{
+   height: 30px;
+   border-bottom: 2px solid #3bb0d0;
+}
+.book-title p{
+	font-size: 22px;
+	color: #3bb0d0;
+}
+.book-title span{
+	font-size: 14px;
+	color: #585858;
+	padding-left: 27px;
+}
+.link-book{
+	height: 30px;
+	margin-top: 10px;
+}
+.link-book ul li{
+	float: left;
+	margin-right: 20px;
+}
+.link-book ul li a{
+	padding: 0 5px;
+	color: #585858;
+	text-align: center;
+	line-height: 30px;
+}
+/*对应的书的div*/
+.books{
+	width: 963px;
+	height: 338px;
+	margin-top: 10px;
+}
+.books-right{
+	width: 771px;
+	height: 338px;
+	margin-left: 10px;
+}
+.books-right img{
+	width: 240px;
+	height: 338px;
+}
+.books-right ul li{
+   position: relative;
+   float: left;
+   margin-right: 15px;
+}
+.hide5{
+	width: 240px;
+	height: 338px;
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.hide5 p{
+	color: #fff;
+	padding-left: 20px;
+	line-height: 30px;
+	padding-top: 20px;
+	font-size: 20px;
+}
+.books-right ul li:hover .hide5{
+	display: block;
+}
+.note-left{
+	width: 450px;
+	height: 72px;
+	margin-top: 24px;
+}
+.note-left ul{
+	height: 35px;
+}
+.note-left ul li{
+	margin-bottom: 5px;
+	font-size: 13px;
+}
+.note-left ul li span{
+	color: #3bb0d0;
+}
+.note-left h3{
+	color: #4C4C4C;
+}
+.note-right{
+	width: 480px;
+	height: 72px;
+	margin-left: 10px;
+	margin-top: 24px;
+}
+.note-right h3{
+	color: #4C4C4C;
+}
+.note-right ul li{
+	margin-bottom: 5px;
+	font-size: 13px;
+}
+.note-right ul li span{
+	color: #3bb0d0;
+}
+/*===============底部=============*/
+footer{
+	height: 530px;
+	border: 1px solid #ccc;
+	margin-top: 86px;
+}
+/*宽为100%，高是200px，给一个背景颜色*/
+.footer-pic{
+	height: 200px;
+	background: #009fbe;
+	
+}
+/*1200px 居中的，相对定位*/
+.pic-middle{
+	width: 1200px;
+	height: 200px;
+	margin: 0 auto;
+	/*border: 1px solid red;*/
+	position: relative;
+}
+/*旅行，触手可及，设置宽高，绝对定位*/
+.pic-middle .span1{
+	display: inline-block;
+	width: 330px;
+	height: 239px;
+	position: absolute;
+	left:0;
+	bottom: 0;
+}
+/*手机二维码，设置宽高，绝对定位*/
+.pic-middle .span2{
+    display: inline-block;
+	width: 285px;
+	height: 239px;
+	position: absolute;
+	left:723px;
+	bottom: 0;
+}
+
+.bg10,.bg11{
+	background: url(../images/footer.jpg);
+}
+
+.bg10{
+	background-position: -2px 0;
+}
+.bg11{
+	background-position: -722px 0;
+}
+
+.seolink{
+	width: 1200px;
+	height: 46px;
+	margin: 20px auto;
+
+}
+.seolink dt{
+	float: left;
+	line-height: 24px;
+	margin-right: 10px;
+}
+.seolink dd{
+	float: left;
+	color: #999;
+	margin-right: 10px;
+	line-height: 24px;
+}
+.seolink2{
+	width: 1200px;
+	height: 80px;
+	border-bottom: 1px solid #ccc;
+	margin: 24px auto;
+}
+.seolink2 dt{
+	float: left;
+	line-height: 24px;
+	margin-right: 10px;
+}
+.seolink2 dd{
+	float: left;
+	color: #999;
+	margin-right: 10px;
+	line-height: 24px;
+}
+/*========3条关于我们===========*/
+.about{
+	width: 876px;
+	height: 130px;
+	margin: 0 auto;
+
+}
+.about ul li{
+    float: left;
+    text-align: center;
+}
+.about ul li a{
+	color: #999;
+	font-size: 12px;
+	padding:0 5px;
+}
+.about ul{
+	margin-left: 80px;
+}
+.about p{
+	font-size: 12px;
+	padding-top: 10px;
+	color: #999;
+}
+.about p a{
+	color: #999;
+}
+.about ul li a:hover{
+	color: #F96F19;
+}
+.beian{
+	margin: 10px 213px;
+}
